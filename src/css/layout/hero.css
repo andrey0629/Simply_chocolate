@@ -59,6 +59,12 @@
   padding: 20px;
 }
 
+@media (min-width: 768px) {
+.hero-container {
+  padding: 40px;
+  }
+}
+
 .hero-subtitle {
   max-width: 330px;
   font-weight: 500;
