@@ -4,21 +4,100 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Title -->
+    <title>Simply chocolate</title>
+
+    <!-- Fonts -->
+
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- Gallery styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.css"
+      integrity="sha512-ka1/Z+PCN6JAoOVT50Ujjhq74r3hE0r433lM5X3VlLmxXRRkAJIPSXiZlccGx6Syd56QW+rPoYaLHm5iIPthLg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Styles for slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Temporary scripts for slider -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body>
-    <load ="partials/header.html" />
+    <!-- Header -->
+    <load src="partials/header.html" />
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+    <main>
+      <!-- Hero -->
+      <load src="partials/hero.html" />
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+      <!-- Advantages -->
+      <load src="partials/advantages.html" />
 
-    <script type="module" src="/main.js"></script>
+      <!-- Unique components -->
+      <load src="partials/unique-components.html" />
+
+      <!-- How it's made -->
+      <load src="partials/how-its-made.html" />
+
+      <!-- Our products -->
+      <load src="partials/our-products.html" />
+
+      <!-- Top sellers -->
+      <load src="partials/top-sellers.html" />
+
+      <!-- Reviews -->
+      <load src="partials/reviews.html" />
+
+      <!-- Subscribe -->
+      <load src="partials/subscribe.html" />
+    </main>
+
+    <!-- Footer -->
+    <load src="partials/footer.html" />
+
+    <!-- Gallery-scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js"
+      integrity="sha512-IKDNPsyNuvwDr8D2nIcJVgNFuj3XXdV0jJ5S6E+nYwl5RiLxrd51TnDJDN1lQJrVdF4K849Lizr12ZCZV81MoA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Modals -->
+    <load src="partials/backdrop-modal.html" />
+
+    <!-- Scripts -->
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

@@ -1,0 +1,322 @@
+<div id="overlay" class="backdrop-modals js-backdrop-modal">
+  <!-- review modal - 1 -->
+  <div class="reviews-modals general-modals modal modal1" data-modal="1">
+    <button class="reviews-button-close modal-close js-modal-close">
+      <svg class="reviews-modal-icon">
+        <use href="./img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="reviews-modal-title">
+      <span class="modal-title-fix">Leave a review </span>about
+      <span class="modal-title-brand">our chocolate</span>
+    </h2>
+
+    <form class="reviews-modal-form" name="reviews" id="review-modal-form">
+      <div class="reviews-modal-wrapper">
+        <label class="visually-hidden" for="reviews-name">Name</label>
+        <input
+          id="reviews-name"
+          class="reviews-modal-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+      </div>
+
+      <div class="reviews-modal-wrapper">
+        <label class="visually-hidden" for="reviews-email">Email</label>
+        <input
+          id="reviews-email"
+          class="reviews-modal-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+
+      <div class="reviews-modal-wrapper review-modal-phone-wrapper">
+        <label class="visually-hidden" for="reviews-phone">Phone number</label>
+        <input
+          id="reviews-phone"
+          class="reviews-modal-input phone-input"
+          type="number"
+          name="phone"
+          placeholder="Phone number"
+          required
+        />
+
+        <div class="phone-inner">
+          <svg class="phone-inner-icon">
+            <use href="./img/sprite.svg#flag-ua"></use>
+          </svg>
+          <span class="phone-inner-code">+380</span>
+        </div>
+      </div>
+
+      <label class="visually-hidden" for="phone">Your review</label>
+      <textarea
+        id="review-about"
+        class="reviews-modal-textarea"
+        name="review-about"
+        placeholder="Enter text"
+      ></textarea>
+
+      <button
+        type="submit"
+        id="review-button-1"
+        class="review-modal-button review-button"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+
+  <!-- review modal - 2 -->
+  <div
+    class="reviews-feedback-modals general-modals modal modal2"
+    data-modal="2"
+  >
+    <button
+      id="cross-button-close"
+      class="reviews-feedback-button-close modal-close js-modal-close"
+    >
+      <svg class="reviews-feedback-modal-icon">
+        <use href="./img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="reviews-feedback-content">
+      <h2 class="reviews-feedback-modal-title">
+        thank you <span>for your feedback!</span>
+      </h2>
+      <p class="reviews-feedback-modal-text">
+        We are so happy to hear from you!
+      </p>
+    </div>
+  </div>
+
+  <!-- top sellers - 3 -->
+  <div
+    class="order-modal_window general-modals modal modal3"
+    id="sellers-modal-form"
+    data-modal="3"
+  >
+    <button type="button" class="order-modal_window-close js-modal-close">
+      <svg class="order-modal_window-close-icon">
+        <use href="./img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="order-modal-title"><span class="akcent-title">Buy</span> now</h3>
+
+    <div class="order-swiper-wrapper responsive-sellers">
+      <div class="order-swiper-slide">
+        <div class="order-slider-card">
+          <div class="order-slider-image">
+            <img
+              class="slider-demonstrate"
+              srcset="./img/buy-now/chocolate-desktop@2x.jpg 2x"
+              src="./img/buy-now/chocolate-desktop.jpg"
+              alt="kinder-chocolate-white-chocolate-chocolate-nuts"
+              width="167"
+              height="148"
+            />
+            <div class="weight-selection">100 g</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-swiper-slide">
+        <div class="order-slider-card">
+          <div class="order-slider-image">
+            <img
+              class="slider-demonstrate"
+              srcset="./img/buy-now/chocolate-white-desktop@2x.jpg 2x"
+              src="./img/buy-now/chocolate-white-desktop.jpg"
+              alt="white-chocolate-cocoa-bean-chocolate-cake"
+              width="167"
+              height="148"
+            />
+            <div class="weight-selection">200 g</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-swiper-slide">
+        <div class="order-slider-card">
+          <div class="order-slider-image">
+            <img
+              class="slider-demonstrate"
+              srcset="./img/buy-now/chocolate-bar-desktop@2x.jpg 2x"
+              src="./img/buy-now/chocolate-bar-desktop.jpg"
+              alt="dark-chocolate"
+              width="167"
+              height="148"
+            />
+            <div class="weight-selection">300 g</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="order-modal-form">
+      <div class="customer-form-field">
+        <div class="form-field">
+          <label for="name" class="customer-form-label"
+            >Personal information
+          </label>
+          <div class="form-field-tablet">
+            <input
+              type="text"
+              class="customer-form-input"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="customer-form-input"
+              name="surname"
+              id="surname"
+              placeholder="Surname"
+            />
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="mail" class="customer-form-label"
+            >Email
+            <input
+              type="email"
+              class="customer-form-input"
+              name="mail"
+              id="mail"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="phone" class="customer-form-label">Phone number </label>
+          <div class="customer-form-phone-wrapper">
+            <div class="phone-inner">
+              <svg class="phone-inner-icon">
+                <use href="./img/sprite.svg#flag-ua"></use>
+              </svg>
+              <span class="phone-inner-code">+380</span>
+            </div>
+
+            <input
+              type="tel"
+              class="customer-form-input_for-number"
+              name="phone"
+              id="phone"
+              placeholder="Phone number"
+            />
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="number" class="customer-form-label">Card number </label>
+          <div class="customer-form-input_for_pay">
+            <input
+              type="number"
+              class="customer-form-input"
+              name="number"
+              id="number"
+              placeholder="Enter card"
+            />
+            <svg class="mastercard-icon" width="32" height="21">
+              <use href="./img/sprite.svg#mastercard"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="comment" class="customer-form-label">Comment</label>
+          <textarea
+            class="comment-input"
+            name="comment"
+            id="comment"
+            rows="4"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+        <div class="button-field">
+          <button
+            type="submit"
+            class="modal-button-brand"
+            id="sellers-button-1"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- sellers modal - 4 -->
+  <div
+    class="seller-feedback-modals general-modals modal modal4"
+    data-modal="4"
+  >
+    <button class="reviews-feedback-button-close modal-close js-modal-close">
+      <svg class="reviews-feedback-modal-icon">
+        <use href="./img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="reviews-feedback-content">
+      <h2 class="reviews-feedback-modal-title">thank you!</h2>
+      <p class="reviews-feedback-modal-text">
+        We are glad that you ordered our chocolate and we are giving you a 20%
+        discount on all our products.
+      </p>
+    </div>
+  </div>
+
+  <!-- put your modals in here -->
+
+  <!-- Модальное окно в subscribe "Explore our new chocolate first"
+        <div class="backdrop-modals is-hidden acвtive" data-modal="9">-->
+  <div class="subscribe-modal general-modals modal modal9" data-modal="9">
+    <picture class="subscribe-modal-img">
+      <source
+        srcset="
+          ./img/explore/review-desktop.jpg    1x,
+          ./img/explore/review-desktop@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        class="subscribe-modal-img"
+        srcset="
+          ./img/explore/review-mobile.jpg    1x,
+          ./img/explore/review-mobile@2x.jpg 2x
+        "
+        src="./img/explore/review-mobile.jpg"
+        alt="Chocolate"
+      />
+    </picture>
+
+    <h3 class="form-title">
+      Explore our<br /><span> new chocolate</span> first!
+    </h3>
+    <form class="submit-form" name="submit-form" autocomplete="on">
+      <div class="submit-form-input">
+        <input
+          class="foot-input"
+          type="email"
+          name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          placeholder="Enter your email"
+          required
+        />
+
+        <button class="submit-btn button-brand" type="submit">Submit</button>
+      </div>
+
+      <button class="close js-modal-close" type="button">
+        <svg class="close-icon">
+          <use href="./img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
