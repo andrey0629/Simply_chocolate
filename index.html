@@ -5,6 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/Simply_chocolate/favicon.svg" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../partials/creditcard.js"></script>
+    <script>
+      window.onload = function () {
+        inputfields = document.getElementsByClassName("creditcard")
+        for (var i = 0; i < inputfields.length; i++) {
+          credit_card_input(inputfields[i]);
+        }
+      }
+    </script>
 
     <!-- Title -->
     <title>Simply chocolate</title>
@@ -53,8 +62,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script type="module" crossorigin src="/Simply_chocolate/assets/index-4e9fe11a.js"></script>
-    <link rel="stylesheet" href="/Simply_chocolate/assets/index-4fc21c3c.css">
+    <script type="module" crossorigin src="/Simply_chocolate/assets/index-6e92bd08.js"></script>
+    <link rel="stylesheet" href="/Simply_chocolate/assets/index-b154a86f.css">
   </head>
   <body>
     <!-- Header -->
@@ -185,7 +194,7 @@
 
     <main>
       <!-- Hero -->
-      <section id="hero" class="hero section">
+      <section id="hero" class="hero">
   <div class="container">
     <div class="hero-bg">
       <div class="hero-container">
@@ -223,7 +232,7 @@
 
 
       <!-- Advantages -->
-      <section id="advantages" class="advantages section">
+      <section id="advantages" class="advantages">
   <div class="container-adaptive">
     <h2 class="visually-hidden">Product Advantages</h2>
     <ul class="advantages-list">
@@ -1156,7 +1165,7 @@
       </div>
     </div>
 
-    <form class="order-modal-form">
+    <form class="order-modal-form" autocomplete="on">
       <div class="customer-form-field">
         <div class="form-field">
           <label for="name" class="customer-form-label"
@@ -1169,6 +1178,7 @@
               name="name"
               id="name"
               placeholder="Name"
+              required
             />
             <input
               type="text"
@@ -1215,11 +1225,12 @@
           <label for="number" class="customer-form-label">Card number </label>
           <div class="customer-form-input_for_pay">
             <input
-              type="number"
-              class="customer-form-input"
+              type="text"
+              class="customer-form-input creditcard"
               name="number"
               id="number"
               placeholder="Enter card"
+              required
             />
             <svg class="mastercard-icon" width="32" height="21">
               <use href="/Simply_chocolate/assets/sprite-673ed965.svg#mastercard"></use>
@@ -1315,6 +1326,8 @@
 
     <!-- Scripts -->
     
+    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   </body>
