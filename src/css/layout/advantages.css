@@ -4,8 +4,10 @@
   padding-bottom: 36px;
   margin-left: 20px;
   margin-right: 20px;
+  border-radius: 30px;
+  margin-top: 72px;
+  margin-bottom: 72px;
 }
-
 
 .advantages-list {
   display: flex;
@@ -47,6 +49,8 @@
     padding-bottom: 50px;
     margin-left: 32px;
     margin-right: 32px;
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 
   .advantages-list {
@@ -66,9 +70,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0 auto;
-    margin-bottom: ;
     width: 100%;
     max-width: 1136px;
+    margin-top: 72px;
     margin-bottom: 128px;
   }
 

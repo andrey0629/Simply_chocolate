@@ -159,7 +159,7 @@
       </div>
     </div>
 
-    <form class="order-modal-form">
+    <form class="order-modal-form" autocomplete="on">
       <div class="customer-form-field">
         <div class="form-field">
           <label for="name" class="customer-form-label"
@@ -172,6 +172,7 @@
               name="name"
               id="name"
               placeholder="Name"
+              required
             />
             <input
               type="text"
@@ -218,11 +219,12 @@
           <label for="number" class="customer-form-label">Card number </label>
           <div class="customer-form-input_for_pay">
             <input
-              type="number"
-              class="customer-form-input"
+              type="text"
+              class="customer-form-input creditcard"
               name="number"
               id="number"
               placeholder="Enter card"
+              required
             />
             <svg class="mastercard-icon" width="32" height="21">
               <use href="./img/sprite.svg#mastercard"></use>
