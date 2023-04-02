@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/Simply_chocolate/favicon.svg" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="../partials/creditcard.js"></script>
+    <script src="./partials/creditcard.js"></script>
     <script>
       window.onload = function () {
         inputfields = document.getElementsByClassName("creditcard")
@@ -194,12 +194,12 @@
 
     <main>
       <!-- Hero -->
-      <section id="hero" class="hero">
+      <section id="hero" class="hero" data-aos="fade-in" data-aos-duration="2000" data-aos-once="false">
   <div class="container">
     <div class="hero-bg">
       <div class="hero-container">
         <h1 class="hero-title visually-hidden">Simply chocolate</h1>
-        <h3 data-aos="fade-in" data-aos-duration="3000" data-aos-once="false" class="hero-subtitle">
+        <h3 class="hero-subtitle">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h3>
@@ -232,7 +232,7 @@
 
 
       <!-- Advantages -->
-      <section id="advantages" class="advantages">
+      <section id="advantages" class="advantages" data-aos="fade-in" data-aos-duration="2000" data-aos-once="false">
   <div class="container-adaptive">
     <h2 class="visually-hidden">Product Advantages</h2>
     <ul class="advantages-list">
@@ -1329,6 +1329,7 @@
     
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
   </body>
 </html>
